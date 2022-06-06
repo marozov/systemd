@@ -105,3 +105,10 @@ WantedBy=multi-user.target
 [root@systemd ~] systemctl enable watchlog.timer
 ```
 Проверяю:
+
+[root@systemd ~]# tail -f /var/log/messages
+```
+Jun  6 08:47:08 localhost systemd: Started My watchlog service.
+Jun  6 08:47:08 localhost systemd: Stopped Run watchlog script every 30 second.
+Jun  6 08:47:09 localhost systemd: Started Run watchlog script every 30 second.
+```
