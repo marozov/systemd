@@ -196,12 +196,12 @@ Listen 8080
 ```
 Поочередно запускаем юниты:
 ```
-[root@hw07-systemd ~]# systemctl start httpd@first
-[root@hw07-systemd ~]# systemctl start httpd@second
+[root@systemd ~]# systemctl start httpd@first
+[root@systemd ~]# systemctl start httpd@second
 ```
 Проверяем результат:
 ```
-[root@ystemd ~]# ss -tunlp | grep httpd
+[root@systemd ~]# ss -tunlp | grep httpd
 tcp    LISTEN     0      128    [::]:8080               [::]:*                   users:(("httpd",pid=3444,fd=4),("httpd",pid=3443,fd=4),("httpd",pid=3442,fd=4),("httpd",pid=3441,fd=4),("httpd",pid=3440,fd=4),("httpd",pid=3438,fd=4))
 tcp    LISTEN     0      128    [::]:80                 [::]:*                   users:(("httpd",pid=3436,fd=4),("httpd",pid=3435,fd=4),("httpd",pid=3434,fd=4),("httpd",pid=3433,fd=4),("httpd",pid=3432,fd=4),("httpd",pid=3431,fd=4))
 ```
