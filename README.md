@@ -96,10 +96,12 @@ Unit=watchlog.service
 WantedBy=multi-user.target
 ```
 Обновляю информацию о юнитах:
-
+```
 [root@systemd ~] systemctl daemon-reload
+```
 Запускаю юнит:
-
+```
 [root@systemd ~] systemctl start watchlog.timer
 [root@systemd ~] systemctl enable watchlog.timer
+```
 Проверяю:
