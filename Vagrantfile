@@ -2,7 +2,7 @@
 # vim: set ft=ruby :
 
 MACHINES = {
-  :"hw07-systemd" => {
+  :"systemd" => {
         :box_name => "centos/7",
         :ip_addr => '192.168.56.101'
   }
